@@ -84,21 +84,19 @@
 				<form class="search-form" action="" method="post">
 					<div class="search-form-group">
 						<label for="arrival-field">Дата заезда:</label>
-						<input type="text" name="arrival" value="24 апреля 2017" id="arrival-field">
-						<div class="calendar"></div>
+						<input type="date" name="arrival" value="2017-04-24" id="arrival-field">
 					</div>
 					<div class="search-form-group">
 						<label for="departure-field">Дата выезда:</label>
-						<input type="text" name="departure" value="4 июля 2017" id="departure-field">
-						<div class="calendar"></div>
+						<input type="date" name="departure" value="2017-07-04" id="departure-field">
 					</div>
 					<div class="search-form-group">
 						<label for="adults-field">Взрослые:</label>
-						<input type="text" name="adults" value="2" id="adults-field">
+						<input type="number" name="adults" value="2" id="adults-field" min="0">
 					</div>
 					<div class="search-form-group">
 						<label for="children-field">Дети:</label>
-						<input type="text" name="children" value="0" id="children-field">
+						<input type="number" name="children" value="0" id="children-field" min="0">
 					</div>
 					<input type="submit" value="Найти">
 				</form>
