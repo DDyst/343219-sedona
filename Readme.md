@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Кирилл Кутюев](https://up.htmlacademy.ru/htmlcss/16/user/343219).
-* Наставник: [Артем Альтигин](https://up.htmlacademy.ru/htmlcss/16/user/82397).
+* Наставник: [Николай Пойманов](https://up.htmlacademy.ru/htmlcss/16/user/23280).
 
 ---
 
