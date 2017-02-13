@@ -3,24 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Седона</title>
-		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=pt-sans">
 		<link rel="stylesheet" type="text/css" href="http://allfont.ru/allfont.css?fonts=pt-sans-bold">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<div class="wrap">
 			<header class="page-header">
 				<div class="logo">
-					<a href="index.html">
-						<img src="img/common/logo.png" width="138" height="70" alt="Седона">
-					</a>
+					<a><img src="img/common/logo.png" width="138" height="70" alt="Седона"></a>
 				</div>
 				<nav class="main-nav">
 					<ul class="nav-list">
 						<li class="nav-item"><a href="#">Информация</a></li>
 						<li class="nav-item"><a href="#">Фото и видео</a></li>
 						<li class="nav-item"><a href="#">Карта штата</a></li>
-						<li class="nav-item"><a href="#">Гостиницы</a></li>
+						<li class="nav-item"><a href="hotels.html">Гостиницы</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -32,7 +31,7 @@
 
 				<section class="reasons">
 					<div class="reasons-header">
-						<h1 class="reasons-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+						<h1 class="reasons-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 						<p class="reasons-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 					</div>
 					<div class="reason-illustrated">
@@ -95,30 +94,44 @@
 						<h3>Заинтересовались?</h3>
 						<p>Укажите предполагаемые даты поездки,<br>
 						и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-						<button class="search-btn" type="button">Поиск гостиницы в Седоне</button>
+						<button class="btn search-btn" type="button">Поиск гостиницы в Седоне</button>
 					</div>
 					<div class="search-window">
 						<form class="search-form" action="" method="post">
 							<div class="search-form-group">
 								<label for="arrival-field">Дата заезда:</label>
-								<input type="date" name="arrival" value="2017-04-24" id="arrival-field">
+								<div class="search-form-date-field">
+									<input type="text" name="arrival" placeholder="24 апреля 2017" id="arrival-field">
+									<span class="icon-calendar"></span>
+								</div>
 							</div>
 							<div class="search-form-group">
 								<label for="departure-field">Дата выезда:</label>
-								<input type="date" name="departure" value="2017-07-04" id="departure-field">
+								<div class="search-form-date-field">
+									<input type="text" name="departure" placeholder="4 июля 2017" id="departure-field">
+									<span class="icon-calendar"></span>
+								</div>
 							</div>
 							<div class="search-form-group">
 								<div class="search-form-group-half">
 									<label for="adults-field">Взрослые:</label>
-									<input type="number" name="adults" value="2" min="0" id="adults-field">
+									<div class="search-form-number-field">
+										<span class="icon icon-minus"></span>
+										<input type="text" name="adults" placeholder="2" id="adults-field">
+										<span class="icon icon-plus"></span>
+									</div>
 								</div>
 								<div class="search-form-group-half">
 									<label for="children-field">Дети:</label>
-									<input type="number" name="children" value="0" min="0" id="children-field">
+									<div class="search-form-number-field">
+										<span class="icon icon-minus"></span>
+										<input type="text" name="children" placeholder="0" id="children-field">
+										<span class="icon icon-plus"></span>
+									</div>
 								</div>
 							</div>
 							<div class="search-form-buttons">
-								<input class="search-form-btn" type="submit" value="Найти">
+								<input class="btn search-form-btn" type="submit" value="Найти">
 							</div>
 						</form>
 					</div>
@@ -131,16 +144,16 @@
 
 			<footer class="page-footer index-page-footer">
 				<div class="footer-info">
-					<span class="hashtag">#visitsedona</span>
+					<div class="hashtag">#visitsedona</div>
 				</div>
 				<div class="footer-social">
 					<a class="social-btn social-btn-twi" href="#">Twitter</a>
 					<a class="social-btn social-btn-fb" href="#">Facebook</a>
-					<a class="social-btn social-btn-youtube" href="#">Youtube</a>
+					<a class="social-btn social-btn-yt" href="#">Youtube</a>
 				</div>
 				<div class="footer-copyright">
 					<span>Website by</span>
-					<a href="https://htmlacademy.ru">HTML Academy</a>
+					<a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
 				</div>
 			</footer>
 		</div>
