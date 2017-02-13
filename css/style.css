@@ -971,6 +971,7 @@ body {
 
 .rating-value {
 	display: inline-block;
+	vertical-align: top;
 	margin-right: 1px;
 	padding: 2px 12px 4px 15px;
 	font-size: 14px;
