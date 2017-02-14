@@ -13,6 +13,7 @@ body {
 	width: 1200px;
 	margin: 0 auto;
 	background-color: #ffffff;
+	box-shadow: 0 5px 13px rgba(0, 1, 1, 0.2);
 }
 
 .btn {
@@ -328,7 +329,7 @@ body {
 
 /* ------ Pop-up form ------ */
 
-.search-window {
+.modal-window {
 	position: absolute;
 	top: 291px;
 	left: 316px;
@@ -339,6 +340,11 @@ body {
 	font-family: "PT Sans Bold", "Arial", sans-serif;
 	color: #000000;
 	background-color: #ffffff; 
+	box-shadow: 0 7px 13px rgba(0, 1, 1, 0.15);
+}
+
+.modal-window-hide {
+	display: none;
 }
 
 .search-form {
@@ -661,6 +667,7 @@ body {
 	width: 50px;
 	background: none;
 	border: none;
+	outline: 0;
 }
 
 .price-min label {
