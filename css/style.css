@@ -23,6 +23,7 @@ body {
 	color: #ffffff;
 	border: none;
 	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
 /* ------ Header ------ */
@@ -835,6 +836,7 @@ body {
 	border: 2px solid #ffffff;
 	border-radius: 2px;
 	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
 .filter-form-btn:hover {
@@ -1141,6 +1143,7 @@ body {
 	margin: 35px 3px 36px 3px;
 	font-size: 0;
 	background-color: #81b3d2;
+	transition: background-color 0.3s;
 }
 
 .social-btn:hover {
