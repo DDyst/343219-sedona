@@ -59,10 +59,8 @@ img {
 }
 
 .nav-item {
-	-webkit-flex-basis: 20%;
-	-ms-flex-preferred-size: 20%;
-	flex-basis: 20%;
 	box-sizing: border-box;
+	width: 240px;
 	padding-top: 13px;
 	padding-bottom: 17px;
 }
@@ -412,7 +410,7 @@ img {
 }
 
 .modal-content-show {
-	display: initial;
+	display: block;
 	-webkit-animation: flip 0.7s;
 	animation: flip 0.7s;
 }
@@ -1124,10 +1122,13 @@ img {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .hashtag {
-	margin: auto;
+	margin: 0 auto;
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 26px;
